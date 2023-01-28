@@ -14,3 +14,5 @@ MCAL\DIO driver\DIO.c
 
 MCAL\Timer driver\Timer.c
 
+Utilities\Interrupts.c
+

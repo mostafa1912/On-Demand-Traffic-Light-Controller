@@ -1,4 +1,4 @@
-#ifndef #ifndef Timer_h__
+#ifndef Timer_h__
 #define Timer_h__
 
 #include "../../Utilities/Registers.h"

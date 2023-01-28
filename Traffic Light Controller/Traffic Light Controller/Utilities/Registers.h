@@ -9,6 +9,7 @@
 
 #include "Types.h"
 
+
 //define pin numbers
 #define PIN0 0
 #define PIN1 1
@@ -20,7 +21,7 @@
 #define PIN7 7
 
 //Define PORTA registers 
-#define PORT_A (*(volatile uint8_t*)(0x3B))
+#define PORTA (*(volatile uint8_t*)(0x3B))
 #define DDRA (*(volatile uint8_t*)(0x3A))
 #define PINA (*(volatile uint8_t*)(0x39))
 

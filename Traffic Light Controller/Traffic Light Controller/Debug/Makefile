@@ -50,7 +50,8 @@ C_SRCS +=  \
 ../EUCAL/LED\ driver/LED.c \
 ../main.c \
 ../MCAL/DIO\ driver/DIO.c \
-../MCAL/Timer\ driver/Timer.c
+../MCAL/Timer\ driver/Timer.c \
+../Utilities/Interrupts.c
 
 
 PREPROCESSING_SRCS += 
@@ -65,7 +66,8 @@ EUCAL/Button\ driver/Button.o \
 EUCAL/LED\ driver/LED.o \
 main.o \
 MCAL/DIO\ driver/DIO.o \
-MCAL/Timer\ driver/Timer.o
+MCAL/Timer\ driver/Timer.o \
+Utilities/Interrupts.o
 
 OBJS_AS_ARGS +=  \
 Application/Application.o \
@@ -73,7 +75,8 @@ Application/Application.o \
 "EUCAL/LED driver/LED.o" \
 main.o \
 "MCAL/DIO driver/DIO.o" \
-"MCAL/Timer driver/Timer.o"
+"MCAL/Timer driver/Timer.o" \
+Utilities/Interrupts.o
 
 C_DEPS +=  \
 Application/Application.d \
@@ -81,7 +84,8 @@ EUCAL/Button\ driver/Button.d \
 EUCAL/LED\ driver/LED.d \
 main.d \
 MCAL/DIO\ driver/DIO.d \
-MCAL/Timer\ driver/Timer.d
+MCAL/Timer\ driver/Timer.d \
+Utilities/Interrupts.d
 
 C_DEPS_AS_ARGS +=  \
 Application/Application.d \
@@ -89,7 +93,8 @@ Application/Application.d \
 "EUCAL/LED driver/LED.d" \
 main.d \
 "MCAL/DIO driver/DIO.d" \
-"MCAL/Timer driver/Timer.d"
+"MCAL/Timer driver/Timer.d" \
+Utilities/Interrupts.d
 
 OUTPUT_FILE_PATH +=Traffic\ Light\ Controller.elf
 
@@ -141,6 +146,13 @@ MCAL/DIO\ driver/DIO.o: ../MCAL/DIO\ driver/DIO.c
 	
 
 MCAL/Timer\ driver/Timer.o: ../MCAL/Timer\ driver/Timer.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32a -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega32a" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+Utilities/Interrupts.o: ../Utilities/Interrupts.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32a -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega32a" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

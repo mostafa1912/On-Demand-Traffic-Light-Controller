@@ -8,7 +8,7 @@
 #ifndef DIO_h__
 #define DIO_h__
 
-#include "../Utilities/Registers.h"
+#include "../../Utilities/Registers.h"
 /*	This file will include all internal driver typedefs,
 	all driver macros,
 	all driver function prototypes.
