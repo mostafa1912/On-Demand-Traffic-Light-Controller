@@ -189,5 +189,7 @@ void appStart()
 
 ISR(EXT_INT_0)
 {	
+	cli();
 	pedestrianMode();
+	sei();
 }
