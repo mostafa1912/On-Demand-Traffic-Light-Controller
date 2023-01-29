@@ -139,10 +139,10 @@ void DIO_read(uint8_t portName, uint8_t pinNumber,uint8_t* value)
 			*value = ((PINB&(1<<pinNumber))>>pinNumber);
 			break;
 		case PORT_C:
-			value = ((PINC&(1<<pinNumber))>>pinNumber);
+			*value = ((PINC&(1<<pinNumber))>>pinNumber);
 			break;
 		case PORT_D:
-			value = ((PIND&(1<<pinNumber))>>pinNumber);
+			*value = ((PIND&(1<<pinNumber))>>pinNumber);
 			break;
 	}
 }

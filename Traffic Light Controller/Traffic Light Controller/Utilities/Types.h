@@ -23,5 +23,8 @@ typedef enum EN_carColor_t
 	RED,YELLOW,GREEN
 }EN_carColor_t;
 
-
+typedef enum EN_buttonPressed_t 
+{
+	NO,YES
+	}EN_buttonPressed_t;
 #endif // Types_h__

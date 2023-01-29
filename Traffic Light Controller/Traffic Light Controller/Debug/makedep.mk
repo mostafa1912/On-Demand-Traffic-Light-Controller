@@ -8,6 +8,8 @@ EUCAL\Button driver\Button.c
 
 EUCAL\LED driver\LED.c
 
+EUCAL\LED driver\Test.c
+
 main.c
 
 MCAL\DIO driver\DIO.c

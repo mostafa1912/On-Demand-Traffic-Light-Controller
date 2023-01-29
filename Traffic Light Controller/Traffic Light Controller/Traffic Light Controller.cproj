@@ -176,10 +176,16 @@
     <Compile Include="EUCAL\Button driver\Button.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="EUCAL\Button driver\Test.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="EUCAL\LED driver\LED.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="EUCAL\LED driver\LED.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EUCAL\LED driver\Test.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="main.c">
@@ -189,6 +195,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="MCAL\DIO driver\DIO.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO driver\Test.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\Timer driver\Test.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="MCAL\Timer driver\Timer.c">

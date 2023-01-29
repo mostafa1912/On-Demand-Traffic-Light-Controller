@@ -6,6 +6,7 @@ void appInit();
 void appStart();
 void normalMode();
 void pedestrianMode();
+void blinkYellow(); //blinks both yellow lights
 
 
 

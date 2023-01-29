@@ -15,7 +15,7 @@ void TIMER_init()
 
 	// Enable global interrupts
 	SREG |= (1<<7);
-	MCUCR |= (1<<3)|(1<<2); //setting interrupts to rising edge
+	MCUCR |= (1<<1)|(1<<0); //setting interrupts to rising edge
 }
 
 void TIMER_delay(uint16_t millisec)
