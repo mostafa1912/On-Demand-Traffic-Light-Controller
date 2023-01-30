@@ -57,7 +57,7 @@
 #define SREG (*(volatile uint8_t*)(0x5F))
 #define GICR (*(volatile uint8_t*)(0x5B))
 #define MCUCR (*(volatile uint8_t*)(0x55))
-
+#define GIFR (*(volatile uint8_t*)0x5A)
 
 
 #endif // Registers_h__

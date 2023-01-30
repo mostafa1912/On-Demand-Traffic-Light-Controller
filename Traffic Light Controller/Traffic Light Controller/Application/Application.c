@@ -211,6 +211,7 @@ void appStart()
 ISR(EXT_INT_0){
 	//cli();
 	pedestrianMode();
+	//GIFR |= (1<<6); done automatically
 	//sei();		
 	
 }
