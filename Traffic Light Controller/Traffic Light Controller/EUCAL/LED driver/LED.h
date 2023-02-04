@@ -2,6 +2,7 @@
 #define LED_h__
 
 #include "../../MCAL/DIO driver/DIO.h"
+#include "../../MCAL/Timer driver/Timer.h"
 
 //LED set 1
 #define LED_CAR_PORT PORT_A

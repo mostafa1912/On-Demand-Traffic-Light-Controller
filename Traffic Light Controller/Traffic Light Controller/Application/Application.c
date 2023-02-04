@@ -1,8 +1,7 @@
 #include "../EUCAL/Button driver/Button.h"
-#include "../MCAL/Timer driver/Timer.h"
 #include "../Utilities/Types.h"
 #include "../Utilities/Registers.h"
-#include "../Utilities/Interrupts.h"
+#include "../MCAL/Interrupt driver/Interrupts.h"
 #include "../EUCAL/LED driver/LED.h"
 
 void appInit(){

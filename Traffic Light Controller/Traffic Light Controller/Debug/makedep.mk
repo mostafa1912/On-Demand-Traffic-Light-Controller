@@ -18,9 +18,9 @@ MCAL\DIO driver\DIO.c
 
 MCAL\DIO driver\Test.c
 
+MCAL\Interrupt driver\Interrupts.c
+
 MCAL\Timer driver\Test.c
 
 MCAL\Timer driver\Timer.c
-
-Utilities\Interrupts.c
 

@@ -200,6 +200,12 @@
     <Compile Include="MCAL\DIO driver\Test.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="MCAL\Interrupt driver\Interrupts.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\Interrupt driver\Interrupts.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="MCAL\Timer driver\Test.c">
       <SubType>compile</SubType>
     </Compile>
@@ -207,12 +213,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="MCAL\Timer driver\Timer.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="Utilities\Interrupts.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="Utilities\Interrupts.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Utilities\Registers.h">
@@ -229,6 +229,7 @@
     <Folder Include="EUCAL" />
     <Folder Include="Application" />
     <Folder Include="MCAL\DIO driver" />
+    <Folder Include="MCAL\Interrupt driver" />
     <Folder Include="MCAL\Timer driver" />
     <Folder Include="Utilities" />
   </ItemGroup>
